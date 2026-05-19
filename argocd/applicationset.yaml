@@ -21,6 +21,8 @@ spec:
                   replicas: "1"
                 - env: staging
                   replicas: "2"
+                - env: qa
+                  replicas: "2"
                 - env: prod
                   replicas: "3"
   template:
@@ -30,7 +32,7 @@ spec:
     spec:
       project: gitops-project
       source:
-        repoURL: https://github.com//gitops-config
+        repoURL: https://github.com/KK-Hyeok/gitops-config
         targetRevision: main
         path: "apps/{{.app}}/overlays/{{.env}}"
       destination:
