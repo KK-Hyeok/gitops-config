@@ -8,8 +8,8 @@ namespace: ops-app2-dev
 
 images:
 - name: ops-app2
-  newName: poro2705/ops-app2
-  newTag: sha-1cfce5a
+  newName: 762131618818.dkr.ecr.ap-northeast-2.amazonaws.com/ops-app2
+  newTag: sha-8350c84
 
 patches:
 - patch: |-
