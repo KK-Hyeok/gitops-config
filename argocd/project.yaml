@@ -15,9 +15,12 @@ spec:
     - server: "https://kubernetes.default.svc"
       namespace: "ops-app2-*"
 
+
   clusterResourceWhitelist:
     - group: ""
       kind: Namespace
+    - group: "gateway.networking.k8s.io"
+      kind: GatewayClass
 
   namespaceResourceWhitelist:
     - group: "*"
