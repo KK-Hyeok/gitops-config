@@ -23,7 +23,7 @@ spec:
     spec:
       project: gitops-project
       source:
-        repoURL: https://github.com/Lecture-SHIN/gitops-config
+        repoURL: https://github.com/KK-Hyeok/gitops-config
         targetRevision: main
         path: "apps/{{.app}}/overlays/{{.env}}"
       destination:
